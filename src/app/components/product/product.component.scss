@@ -1,0 +1,17 @@
+#product {
+  height: 99.8vh;
+
+  .mat-card {
+    border-radius: 8px;
+  }
+  .h-40px {
+    height: 40px !important;
+  }
+  .mat-mdc-card-content {
+    padding-top: 12px !important;
+  }
+
+  .grid-table {
+    height: 85vh;
+  }
+}

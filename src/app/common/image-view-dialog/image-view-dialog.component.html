@@ -1,0 +1,9 @@
+<div class="image-preview-container">
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="px-2 text-white w-full">
+        <span class="text-base">Scroll mouse wheel to zoom in and out</span>
+        <mat-icon matTooltip="close" class="cursor-pointer text-3xl close-icon" (click)="close()">close</mat-icon>
+    </div>
+    <div class="image-container mt-2" fxLayout="row" fxLayoutAlign="center center" (wheel)="onMouseWheel($event)">
+        <img [src]="imageUrl" alt="Preview Image" [style.transform]="'scale(' + zoomLevel + ')'">
+    </div>
+</div>

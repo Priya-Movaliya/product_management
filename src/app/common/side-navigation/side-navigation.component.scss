@@ -1,0 +1,49 @@
+#sidenav-container {
+  height: 100%;
+  background-color: #153d79;
+
+  .mat-nav-list {
+    height: 90%;
+  }
+
+  .nav-bar-title {
+    height: 40px !important;
+
+    .title-icon {
+      color: #efefef;
+      font-size: 30px;
+      width: auto;
+      height: auto;
+    }
+    div {
+      color: #efefef;
+      font-size: 20px;
+    }
+  }
+
+  .nav-bar-list {
+    height: 45px !important;
+    // margin-left: 15px;
+    border-radius: 5px;
+    // max-width: 170px;
+  }
+
+  .active-nav-item,
+  .arrow-icon {
+    background-color: #efefef;
+  }
+
+  .nav-icon {
+    color: #efefef;
+  }
+
+  .active-icon-item,
+  .arrow-icon {
+    color: #153d79;
+  }
+
+  .footer {
+    padding: 0px 10px;
+    background-color: #153d79;
+  }
+}

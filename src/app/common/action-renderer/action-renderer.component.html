@@ -1,0 +1,11 @@
+<div id="action-renderer" fxLayout="row" fxLayoutGap="10px">
+    <ng-container *ngIf="!!agParams.edit">
+        <mat-icon color="primary" class="mt-0.5 cursor-pointer" matTooltip="Edit" (click)="editClicked()">edit</mat-icon>
+    </ng-container>
+    <ng-container *ngIf="!!agParams.delete">
+        <mat-icon color="warn" class="mt-0.5 cursor-pointer" matTooltip="Delete" (click)="deleteClicked()">delete</mat-icon>
+    </ng-container>
+    <ng-container *ngIf="!!agParams.view">
+        <img class="image cursor-pointer" [matTooltip]="agParams.data.image ? 'View Image' : ''" [src]="agParams.data.image || '../assets/letters/'+ agParams.data.name[0].toUpperCase() +'.png'" (click)="agParams.data.image ? viewClicked() : null">
+    </ng-container>
+</div>

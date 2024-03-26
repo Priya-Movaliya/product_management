@@ -1,0 +1,15 @@
+.image-preview-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+ 
+  .image-container {
+    max-height: 600px;
+    overflow: hidden !important;
+  }
+ 
+  .close-icon {
+    height: auto !important;
+    width: auto !important;
+  }
+}

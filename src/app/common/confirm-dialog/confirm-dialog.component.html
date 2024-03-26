@@ -1,0 +1,7 @@
+<mat-dialog-content class="mat-typography">
+    <span class="text-lg">{{dialogData.message}}</span>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+    <button mat-raised-button class="mb-1" color="warn" (click)="onSubmit(false)">No</button>
+    <button mat-raised-button class="mb-1" color="primary" (click)="onSubmit(true)">Yes</button>
+</mat-dialog-actions>

@@ -1,0 +1,22 @@
+.main_content {
+  background: #f6f6f6;
+}
+
+/** ag-grid row height css for icons */
+
+.ag-grid-action-icon {
+  line-height: 18px !important;
+  padding: 0 7px !important;
+  margin: 1px 0 !important;
+}
+.ag-cell-wrapper {
+  height: 30px !important;
+  padding-bottom: 2px !important;
+}
+.text-align-right {
+  justify-content: flex-end !important;
+}
+.mat-spinner{
+  position: absolute;
+  bottom: 50px;
+}

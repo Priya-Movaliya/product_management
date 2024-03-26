@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "ag-grid-community/styles/ag-grid.css";
+@import "ag-grid-community/styles/ag-theme-alpine.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mdc-notched-outline__notch {
+  border-right: none;
+}
+
+.mat-input {
+  font-size: 14px !important;
+
+  .mat-mdc-form-field-flex {
+    height: 35px !important;
+    display: flex;
+    align-items: center; /* Vertically center the input */
+  }
+
+  .mat-mdc-form-field .mat-form-field-wrapper {
+    height: auto !important; /* Reset height to auto */
+    display: flex;
+    align-items: center; /* Vertically center the input */
+  }
+}
+
+.mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
+  top: 18px !important;
+  font-size: 14px !important;
+}
+
+.mat-mdc-form-field
+  .mdc-text-field--outlined
+  .mdc-notched-outline--upgraded
+  .mdc-floating-label--float-above {
+  margin-top: 8px !important;
+}
+
+.mat-mdc-form-field:not(.mat-form-field-no-animations) .mdc-text-field__input {
+  margin-top: 4px !important;
+}
+
+.mat-mdc-form-field-error {
+  font-size: 10px;
+  margin-top: -3px !important;
+}
+
+.errorSnack {
+  color: white !important;
+  opacity: 0.7 !important;
+  background-color: #f44336 !important;
+  margin-top: 50px !important;
+  margin-right: 20px !important;
+}
+
+.successSnack {
+  color: white !important;
+  opacity: 0.9 !important;
+  background-color: #3f51b5 !important;
+  margin-top: 40px !important;
+  margin-right: 20px !important;
+}
+
+.transparent-dialog .mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: rgba(0,0,0,0.5) !important; /* make the image preview dialog transparent */
+}
+
+.fs-22 {
+  font-size: 22px !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-auto {
+  height: auto !important;
+}

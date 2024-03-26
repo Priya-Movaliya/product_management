@@ -1,0 +1,25 @@
+<div id="sidenav-container" [@onSideNavChange]="sideNavState ? 'open' : 'close'">
+  <div fxLayout="column" class="mat-nav-list">
+      <mat-nav-list>
+        <a class="nav-bar-title mb-2" mat-list-item>
+          <mat-icon class="title-icon">settings_applications</mat-icon>
+          <div class="ml-3 mt-1.5" [@animateText]="linkText ? 'show' : 'hide'">Management</div>
+        </a>
+      </mat-nav-list>
+      <mat-divider></mat-divider>
+
+      <mat-nav-list>
+        <a class="nav-bar-list mat-elevation-z4 mb-2" [routerLink]="menu.url" routerLinkActive="active-nav-item" mat-list-item *ngFor="let menu of navigationMenu">
+          <mat-icon class="nav-icon" routerLinkActive="active-icon-item">{{menu?.icon}}</mat-icon>
+          <div class="ml-4 mt-1.5 nav-icon" routerLinkActive="active-icon-item" [@animateText]="linkText ? 'show' : 'hide'">{{ menu?.name }} </div>
+        </a>
+      </mat-nav-list>
+  </div>
+
+  <div fxLayout="row" class="text-white footer" fxLayoutAlign="end center">
+    <button mat-mini-fab class="arrow-icon" (click)="onSinenavToggle()" [matTooltip]="sideNavState ? 'Collapse' : 'Expand'">
+      <mat-icon *ngIf="sideNavState">arrow_left</mat-icon>
+      <mat-icon *ngIf="!sideNavState">arrow_right</mat-icon>
+    </button>
+  </div>
+</div>
